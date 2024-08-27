@@ -7,8 +7,9 @@ class gengibre extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Container(
-      height: 180,
+      height: size.height,
       width: double.infinity,
       decoration: BoxDecoration(
         border: Border(
@@ -29,7 +30,7 @@ class gengibre extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(
               top: 30,
-              left: 50,
+              left: 30,
             ),
             child: Column(
               children: [
@@ -49,12 +50,12 @@ class gengibre extends StatelessWidget {
                         child: const Text(
                           '-',
                           style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 20),
+                              fontWeight: FontWeight.bold, fontSize: 15),
                         ),
                       ),
-                      const SizedBox(width: 10),
+                      const SizedBox(width: 8),
                       const Text('1'),
-                      const SizedBox(width: 10),
+                      const SizedBox(width: 8),
                       ElevatedButton(
                         onPressed: () {
                           // Função do button
@@ -62,7 +63,7 @@ class gengibre extends StatelessWidget {
                         child: Text(
                           '+',
                           style:
-                              TextStyle(color: Colors.green[400], fontSize: 20),
+                              TextStyle(color: Colors.green[400], fontSize: 15),
                         ),
                       ),
                     ],
@@ -72,7 +73,7 @@ class gengibre extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 40, left: 100, bottom: 45),
+            padding: const EdgeInsets.only(top: 0, left: 0, bottom: 0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

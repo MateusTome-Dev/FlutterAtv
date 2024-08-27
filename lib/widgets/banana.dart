@@ -7,6 +7,7 @@ class banana extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Container(
       height: 180,
       width: double.infinity,
@@ -29,7 +30,7 @@ class banana extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(
               top: 30,
-              left: 50,
+              left: 30,
             ),
             child: Column(
               children: [
@@ -72,7 +73,7 @@ class banana extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 40, left: 100, bottom: 45),
+            padding: const EdgeInsets.only(top: 0, left: 0, bottom: 0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

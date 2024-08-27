@@ -9,6 +9,7 @@ class Products extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -29,10 +30,6 @@ class Products extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(14.0),
               child: banana(),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(14.0),
-              child: gengibre(),
             ),
             Container(
               width: 200,
